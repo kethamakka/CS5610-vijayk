@@ -1,0 +1,19 @@
+﻿body {
+
+}
+td.r1c1 {
+            background-color:blanchedalmond;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:20px;
+        }
+        td.r1c2 {
+            background-color:aqua;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:medium;
+        }
+        h3 {
+            background-color:green;
+        }
+        h4 {
+            color:blue;
+        }
