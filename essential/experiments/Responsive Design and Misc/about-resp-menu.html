@@ -1,9 +1,30 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>About Responsive Menu Experiment</title>
+    <link href="about.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <h3>About Responsive Menu Experiment</h3>
+    <div>
+        The experiment is to demonstrate how a menu on a page could be responsive. Generally menus are displayed as a navigation bar. When the window has to be displayed on a smaller screen , the menu wraps up like text. To avoid this, the menus can be designed responsive.
+        <br />
+        <h3>Code Snippets</h3>
+        <code>
+            #menu-link, #small-menu, #back-to-top{<br />
+            display:none;<br />
+            }
+        </code>
+        <br />
+        <code>
+            @media screen and (max-width:399px){<br />
+            #menu-link, #small-menu, #back-to-top {<br />
+            display:inline;<br />
+            }
+        </code>
+        <br />
+        these code snippets decide when the content in the menu has to be displayed and when not to. The default behaviour is to keep the menus hidden. But when the screen goes smaller than 400px, navigation bar is hidden and a link to the menu items is shown<br />
 
+    </div>
 </body>
 </html>
