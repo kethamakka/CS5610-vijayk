@@ -1,0 +1,33 @@
+﻿h3{
+    background-color:cadetblue;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        background-color:aqua;
+
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 699px){
+    body{
+        background-color:cadetblue;
+    }
+    .pad{
+        width:400px;
+       }
+    
+}
+
+@media screen and (min-width: 700px){
+    body{
+        background-color:cornflowerblue;
+    }
+    .pad{
+        
+        width:600px;
+       
+    }
+}
+
+

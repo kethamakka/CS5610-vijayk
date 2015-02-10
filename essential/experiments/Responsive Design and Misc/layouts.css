@@ -1,0 +1,23 @@
+﻿body {
+}
+h1{
+    color:white;
+    text-align:center;
+    background-color:black;
+    //padding:0px;
+   // margin:0px;
+}
+
+h3{
+    background-color:green;
+    clear:both;
+}
+
+div.image img{
+    float:left;
+}
+
+p.paragraph{
+    padding:10px;
+    float:left;
+}

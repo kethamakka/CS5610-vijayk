@@ -85,6 +85,7 @@
                     <li><a href="images/autoimage.aspx" target="_blank">Images</a></li>
                     <li><a href="blog/" target="_blank">Blog</a></li>
                     <li><a href="experiments/index.html" target="_blank">Experiments</a></li>
+                    <li><a href="https://github.com/kethamakka/CS5610-vijayk" target="_blank">CS5610-vijayk GitHub</a></li>
                 </ul>
 
                 <hr />
