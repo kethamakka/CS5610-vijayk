@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>About the experiment</title>
+    <link href="004-pagination.css" rel="stylesheet" type="text/css" />
+    <link href="page-width.css" rel="stylesheet" type="text/css" />
+    <!--<link href="page-width.css" rel="stylesheet" type="text/css" />-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>About the experiment</h3>
+        <div class="pagi">
+            <ul class="pagination">
+                <li><a href="004-pagination.html">Home</a></li>
+                <li class="active"><a href="004-about.html">About</a></li>
+                <li><a href="004-html.html">Html Source</a></li>
+                <li><a href="004-css.html">Css Source</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Description</h3>
+            <p>This experiment is about two components. Firstly the "Pagination". This option gives an index to navigate between different pages from a single webpaage. The Index is diaplayed as a horizontal array of links. Each page, which is a part of "pagination" must have the code for pagination. <br /> The pagination is achieved by assigning class="pagination" to "UL" tag. The following code snippet shows how the pagination is defined</p>
+            <h4>Code Snippet</h4>
+            <code>
+                &lt;ul class="pagination"&gt;<br />
+                &lt;li&gt;&lt;a href="004-pagination.html"&gt;Home&lt;/a&gt;&lt;/li&gt;<br />
+                &lt;li class="active"&gt;&lt;a href="004-about.html"&gt;About&lt;/a&gt;&lt;/li&gt;<br />
+                &lt;li&gt;&lt;a href="004-html.html"&gt;Html Source&lt;/a&gt;&lt;/li&gt;<br />
+                &lt;li&gt;&lt;a href="004-css.html"&gt;Css Source&lt;/a&gt;&lt;/li&gt;<br />
+                &lt;/ul&gt;
+            </code>
+            <br />
+            <br />
+            <p><b>Secondly</b>, in the Home page of the experiment, a "Bootstrap Carousel" is implemented. A Carousel is essentially a Slide show within a webpage. This is a plugin, which is included in "bootstrap.js" file.  The Carousel is contained in a "div" tag, which must have an ID, for the carousel functions to perform correctly. <br /> The caoursel is defined by the class "carousl slide". This specifies that the "div" has a carousel. The "data-ride" attribute tells the bootstrap to start the animation as soon as the webpage loads. Tha verious parts of the code in the following code snippets, describe various functions of the carousel.</p><br />
+            <h4>Code Snippet</h4>
+            
+            <code>
+                &lt;ol class="carousel-indicators"&gt;<br />
+                &lt;li data-target="#myCarousel" data-slide-to="0" class="active"&gt;&lt;/li&gt;<br />
+                &lt;li data-target="#myCarousel" data-slide-to="1"&gt;&lt;/li&gt;<br />
+                &lt;li data-target="#myCarousel" data-slide-to="2"&gt;&lt;/li&gt;<br />
+                &lt;li data-target="#myCarousel" data-slide-to="3"&gt;&lt;/li&gt;<br />
+                &lt;/ol&gt;
+            </code><br />
+            <p>The above code snippet tells bootstrap abou the indicators (small dots on the carousel showing the number of slides in the crousel) as such, which indicator should direct to what slide.</p>
+            <br />
+            <h4>Code Snippet</h4>
+            <code>
+                &lt;div class="item active"&gt;<br />
+                &lt;img class="img-responsive" src="Campus.jpg" alt="My Campus" width="704" height="342"&gt;<br />
+                &lt;/div&gt;
+            </code>
+            <br />
+            <p>The above code snippet shows an example of assigning a file to the slide show of the carousel.</p>
+            <br />
+            <h4>Code Snippet</h4>
+            <code>
+                &lt;a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"&gt;<br />
+                &lt;span class="glyphicon glyphicon-chevron-left" aria-hidden="true"&gt;&lt;/span&gt;<br />
+                &lt;span class="sr-only"&gt;Previous&lt;/span&gt;<br />
+                &lt;/a&gt;
+            </code>
+            <br />
+            <p>The above code snippet shows how the arrows on the carousel should work. The carousel provides navigation of slides through "right" and "left" arrows.</p>
+        </div>
+</body>
+</html>

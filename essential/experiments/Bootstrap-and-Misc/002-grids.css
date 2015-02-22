@@ -1,0 +1,21 @@
+﻿body {
+    text-align:left;
+}
+
+.container{
+    padding:10px;
+}
+
+.row{
+    padding:10px;
+    border:hidden;
+    background-color:beige;
+}
+
+.pic{
+      text-align:center;
+  }
+
+div{
+    padding:10px;
+}

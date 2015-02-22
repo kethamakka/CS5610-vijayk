@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Basics of bootsrtrap</title>
+    <!--<link href="page-width.css" rel="stylesheet" type="text/css" />-->
+    <link href="002-grids.css" rel="stylesheet" type="text/css" />
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Grids in Bootstrap</h1>
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="NEU.png" class="img-responsive" alt="NEU Poster" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+            <div class="col-sm-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-4 pic">
+                <img src="see.jpg" alt="Bad Sight" class="img-responsive"/>
+            </div>
+            <div class="col-sm-4 pic">
+                <img src="listen.jpg" alt="Bad Sight" class="img-responsive"/>
+            </div>
+            <div class="col-sm-4 pic">
+                <img src="talk.jpg" alt="Bad Sight" class="img-responsive"/>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-3">One fourth</div>
+            <div class="col-sm-3">Half</div>
+            <div class="col-sm-3">Three Foutrhs</div>
+            <div class="col-sm-3">Last</div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-1">First</div>
+            <div class="col-md-1">Second</div>
+            <div class="col-md-1">Third</div>
+            <div class="col-md-1">Fourth</div>
+            <div class="col-md-1">Fifth</div>
+            <div class="col-md-1">Sixth</div>
+            <div class="col-md-1">Seventh</div>
+            <div class="col-md-1">Eighth</div>
+            <div class="col-md-1">Ninth</div>
+            <div class="col-md-1">Tenth</div>
+            <div class="col-md-1">Eleventh</div>
+            <div class="col-md-1">Twelfth</div>
+        </div>
+
+        <div>
+            <h3>About the Experiment</h3>
+            <p>This experiment is about the grid management in bootstrap. The bootstrap defines a webpage in to 12 columsns. These columns can be used to diaplay content in form of grids. The bootstraps grids are responsive. The grid is applied to a "div". The outer "div" should invoke the class "row" to define a row. The inner "div" of "row" will invoke a class "col*-*", meaning size of the display device and the width of the column. For example "col-sm-6", would mean that the coulmn is designed for a tablet and the span of the column is 6 unit columns.<br />The coulmn size should sum equal to 12 all the time. The following code snippet shows the correct way of defining a column.</p>
+            <br />
+            <code>
+                &lt;div class="row"&gt;<br />
+                &lt;div class="col-sm-3"&gt;One fourth&lt;/div&gt;<br />
+                &lt;div class="col-sm-3"&gt;Half&lt;/div&gt;<br />
+                &lt;div class="col-sm-3"&gt;Three Foutrhs&lt;/div&gt;<br />
+                &lt;div class="col-sm-3"&gt;Last&lt;/div&gt;<br />
+                &lt;/div&gt;
+            </code>
+            <br />
+            <p>The first row on the page that spans 12 unit columns, holds an image which has been embedded using ".img-responsive" class. This class makes the image scale itself nicly when the webpage starts to decrease in size and hence helping in responsive design.</p><br />
+            Please click <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/bootstrap-and-misc/002-grids.html">here</a> for <span style="color:blue">HTML Code</span> <br />
+            Please click <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/bootstrap-and-misc/002-grids.css">here</a> for <span style="color:blue">CSS Code</span> 
+        </div>
+
+    </div>
+</body>
+</html>
