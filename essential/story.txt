@@ -5,3 +5,4 @@ story/index.htm?../experiments/HTML/story.txt						Week 1 Experiments
 story/index.htm?../experiments/CSS-with-HTML/story.txt				Week 2 Experiments
 story/index.htm?../experiments/Responsive-Design-and-Misc/story.txt	Week 3 Experiments
 story/index.htm?../experiments/Bootstrap-and-Misc/story.txt			Week 4 Experiments
+story/index.htm?../experiments/javascript-and-jQuery/story.txt		Week 5 and Week 6 Experiments

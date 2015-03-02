@@ -1,3 +1,0 @@
-../story/index.htm?../HTML/story.txt						Week 1 Experiments
-../story/index.htm?../CSS-with-HTML/story.txt				Week 2 Experiments
-../story/index.htm?../Responsive-Design-and-Misc/story.txt	Week 3 Experiments

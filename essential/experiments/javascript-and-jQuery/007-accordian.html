@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery UI Accordian</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script src="007-accordian.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="007-accordian.css" />
+
+</head>
+<body>
+    <div class="container">
+        <h1> JQuery Accordion</h1>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading"> Description </div>
+            <div class="panel-body">
+                This experiment is about using JQuery UI Accordian Plugin for creating accordian with some styling applied.
+                For each content under accordion we create a div and include the heading in header tag and content in div tag.
+                The main purpose of this experiment is to make efficient use of space and accordion helps us to use a limited amount of space to
+                show more content. This is achieved by showing the content of class which is currently active and hiding the rest.
+                <br />
+                <br />
+                Source Code <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/javascript-and-jquery/007-accordian.css"> CSS Source </a> ||
+                <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/javascript-and-jquery/007-accordian.html"> HTML Source</a>
+
+            </div>
+        </div>
+        
+
+        <div id="accordion">
+            <h3><a href="#">Lypsum1</a></h3>
+            <div>
+                <p>
+                    <strong>Lypsum1</strong>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <h3><a href="#">Lypsum2</a></h3>
+            <div>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <h3><a href="#">Lypsum3</a></h3>
+            <div>
+                <p>
+                    <strong>Lypsum3</strong> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <h3><a href="#">Lypsum4</a></h3>
+            <div>
+                <p>
+                    <strong>Lypsum4</strong> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <h3><a href="#">Lypsum5</a></h3>
+            <div>
+                <p>
+                    <strong>Lypsum5</strong>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="panel panel-primary">
+            <div class="panel-heading"> Code Snippet </div>
+            <div class="panel-body">
+                <pre>
+            $(function () {
+                var trig = {
+                    event:"mouseover"
+                }   
+                $("#accordion").accordion(trig);
+            });
+        </pre>
+                <br />
+
+                Reference: JQuery Ui Learning
+            </div>
+        </div>
+    </div>
+</body>
+</html>

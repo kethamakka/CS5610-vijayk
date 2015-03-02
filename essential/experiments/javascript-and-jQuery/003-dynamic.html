@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Append and Remove</title>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="003-dynamic.js"></script>
+</head>
+<body>
+    <h1>Append and Remove</h1>
+    <p class="blueBg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span class="redBg">Lorem Ipsum </span>has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p class="redBg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span class="blueBg">Lorem Ipsum </span>has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <h3>
+        About the Experiment
+    </h3>
+    <code>
+        $("p").append(" This is new content");<br />
+        $("body").append("<p>this is a new pararaph</p>");<br />
+        $("body").prepend("<p>this is a new pararaph</p>");<br />
+    </code>
+    <p>The Experiment describes about how the HTML components can be eited, that is, appended, deleted, changed and newly created dynamically through $().</p>
+    <b>Source Code || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/javascript-and-jquery/003-dynamic.html">HTML Source</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/javascript-and-jquery/003-dynamic.js">JS Source</a></b>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Week-5-and-6.html			Week 5 and Week 6 experiments
+000-basic.html				Basics of jQuery
+001-init.html				Passing init function to $()
+002-styling.html			Adding CSS dynamically to HTML
+003-dynamic.html			Appending and removing HTML content
+004-variables-arrays.html		Rendering variables and arrays
+006.html				Rendering Objects
+005-array-of-objects.html		Arrays of objects
+007-accordian.html			Accordian in jQuery

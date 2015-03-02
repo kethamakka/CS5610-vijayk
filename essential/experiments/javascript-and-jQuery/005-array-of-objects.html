@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Array of Objects</title>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="005.js"></script>
+</head>
+<body>
+    <div>
+        <h1 id="main-title">djfgashfd "sjgf" dhfghds!!</h1>
+        <h2>Previously it was <span>  djfgashfd "sjgf" dhfghds!! </span></h2>
+    </div>
+
+    <br />
+
+    <div>
+        <h4>This is a dynamcally generated object</h4>
+        <div id="employee">
+            <span id="fName">dfdhdjks</span>
+            <span id="lName">kkdfds</span>
+        </div>
+    </div>
+
+    <div>
+        <h4>This is a dynamically generated Table of objects</h4>
+        <table id="employees"></table>
+        <br />
+        <b>Previously table was empty.</b>
+    </div>
+    <br />
+
+    <h4>This is a dynalically generated Unordered list</h4>
+    <ul id="geners">
+        <li>hsdas</li>
+        <li>uuygDA</li>
+        <li>hhfsj</li>
+        <li>ajjjshgdfjsa</li>
+    </ul>
+    <br />
+    <b>previously the list was</b>
+    <span>
+        <ul id="geners">
+            <li>hsdas</li>
+            <li>uuygDA</li>
+            <li>hhfsj</li>
+            <li>ajjjshgdfjsa</li>
+        </ul>
+    </span>
+    <p class="blueBg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span class="redBg">Lorem Ipsum </span>has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p class="redBg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span class="blueBg">Lorem Ipsum </span>has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <h3>
+        About the Experiment
+    </h3>
+    <code>
+        for (var j in employees) {<br />
+        var e = employees[j];<br />
+        var tr = $("&lt;tr&gt;");<br />
+        var td = $("&lt;td&gt;");<br />
+        td.append(e.fName);<br />
+        tr.append(td);<br />
+        td = $("&lt;td&gt;");<br />
+        td.append(e.lName);<br />
+        tr.append(td);<br />
+        employs.append(tr);<br />
+        }
+    </code>
+    <p>The experiment is about how an array of JSON objects can be manipulated dynamically using jQuery. The array of objects are displayed as a table. The code snippet describes the same.</p>
+    <b>Source Code || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/javascript-and-jquery/005-array-of-objects.html">HTML Source</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/javascript-and-jquery/005.js">JS Source</a></b>
+</body>
+</html>
