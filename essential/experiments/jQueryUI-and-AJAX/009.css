@@ -1,0 +1,7 @@
+﻿.resizeMe{
+    overflow: hidden;
+    background-color : lightgray;
+}
+.dragMe{
+    background-color : lightblue;
+}

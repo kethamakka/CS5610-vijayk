@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Hello world Angular JS</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/HelloWorldApp.js"></script>
+    <link href="../../page-width.css" rel="stylesheet" type="text/css" />
+</head>
+<body ng-app="HelloWorldApp">
+    <div ng-controller="HelloController">
+        <h1>Hello World from Angular JS</h1>
+        <table>
+            <tr ng-repeat="e in employees">
+                <td>{{e.first}}</td>
+                <td>{{e.last}}</td>
+            </tr>
+        </table>
+        <br />
+        <ul>
+            <li ng-repeat="e in employees">
+                <span>{{e.first}}</span>
+                <span>{{e.last}}</span>
+            </li>
+        </ul>
+        <p>
+            {{employee.first}}
+            {{employee.last}}
+        </p>
+        <input ng-model="hello" />
+        <br />
+        {{hello}}
+    </div>
+    
+</body>
+</html>

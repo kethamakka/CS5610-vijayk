@@ -1,0 +1,8 @@
+week-7.html		Week 7 Experiments
+008-draggable.html			Draggable components
+009-resizable.html			Resizable Components
+010-sortable.html			Set Lisa Straight
+011-add-on-click.html		Add things on the FLY!
+012-local-storage.html		Local Storage and Retrieval
+000.html					Querying from a WEB API
+001.html					Querying based on the server Template

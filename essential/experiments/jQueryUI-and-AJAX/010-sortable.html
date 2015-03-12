@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sortable</title>
+    <link rel="stylesheet" href="../../css/jquery-ui.css" />
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="010.js"></script>
+    <link rel="stylesheet" href="010.css" type="text/css" />
+    <link rel="stylesheet" href="../../page-width.css" type="text/css" />
+</head>
+<body>
+    <h1>Get the image right</h1>
+    <p>The images in the unordered list are sortable. Moving the images gets the image right.</p>
+    <div class="grid">
+        <ul class="orderMe">
+            <li><img src="1.jpeg" alt="shuffeled Image" />
+            <li><img src="2.jpeg" alt="shuffeled Image" />
+            <li><img src="3.jpeg" alt="shuffeled Image" />
+            <li><img src="4.jpeg" alt="shuffeled Image" />
+            <li><img src="5.jpeg" alt="shuffeled Image" />
+            <li><img src="6.jpeg" alt="shuffeled Image" />
+            <li><img src="7.jpeg" alt="shuffeled Image" />
+            <li><img src="8.jpeg" alt="shuffeled Image" />
+       </ul>
+    </div>
+    <div id="documentation">
+        <h3>
+            About the Experiment
+        </h3>
+        <b>JS Code snippet</b>
+        <code>
+            $(function () {<br />
+            $(".orderMe").sortable();<br />
+            });
+        </code>
+        <b>CSS Code snippet</b>
+        <code>
+            .grid{<br />
+            width : 510px;<br />
+            height : 724px;<br />
+            }<br />
+            <br />
+            ul li{<br />
+            margin : -4px -4px -4px -4px;<br />
+            display : inline-block;<br />
+            }
+        </code>
+        <p>The experiment is about the feature "sortable" of jQueryUI. This feature allows the lists to be sorted dynamically. The list items can be moved around in x or y axis and can be dropped iin the right place, while the rest os the list accomodate the changes by giving place. This idea was used to create a mini game to set right the image of Mona Lisa. The image was clipped using photoshop and the clipped sub images were used as list items and the list was made sortable. The above code snippet shows the procedure. In the CSS file, The list was displayed as "inline-block" style and the white spaces around the list elements were removed by setting the margins to negative values.</p>
+        <b>Source Code || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/jqueryui-and-ajax/010-sortable.html">HTML Code</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/jqueryui-and-ajax/010.js">JS Code</a></b>
+    </div>
+</body>
+</html>

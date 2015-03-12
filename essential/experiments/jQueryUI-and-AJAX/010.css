@@ -1,0 +1,10 @@
+﻿.grid{
+    width : 510px;
+    height : 724px;
+    
+}
+
+ul li{
+    margin : -4px -4px -4px -4px;
+    display : inline-block;
+}

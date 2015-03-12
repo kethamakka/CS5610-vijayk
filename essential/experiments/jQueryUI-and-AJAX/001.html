@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery-Basics</title>
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="001.js"></script>
+    <link rel="stylesheet" href="../../page-width.css" type="text/css" />
+</head>
+<body>
+    <h1 class="hello">Ajax</h1>
+    Search for a movie.
+    <br />
+    <input id="title" placeholder="Title" />
+    <button id="getMovie">Get Movie</button>
+    <ul id="movies">
+        <li class="template">
+            <span class="title">Title of the Movie</span>
+            <p class="plot">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            <img class="poster" src="https://lh3.googleusercontent.com/-K9PuX9hm3Eg/AAAAAAAAAAI/AAAAAAAAABU/9J6EBNw0xnE/photo.jpg">
+        </li>
+    </ul>
+    <div id="documentation">
+        <h3>
+            About the Experiment
+        </h3>
+        <code>
+            url: "http://www.myapifilms.com/imdb?title=" + title + "&format=JSONP
+        </code>
+        <p>Thiis experiment builds on the idea that we can retrieve the contents from a web API and parameterize the detailes received and redure the amount of hardcode in the JS file. The code snippet above shows how the title is parameterized. The content received are rendered with the help of a template. As long as the template is kknown, the rendering of the code is irrespective of the HTML elements inside the template. The rendering is shown in the code snippet below.The template grabbed from the HTMl will be cloned the required number of times and individual elements will be rendered acccordingly, later appening each to the html page</p>
+        <code>
+            var parent = $("#movies");<br />
+            var template = parent.find(".template");<br />
+            <br />
+            <br />
+            var item = template.clone();<br />
+            item.find(".title").html(title);<br />
+            item.find(".plot").html(plot);<br />
+            item.find(".poster").attr("src", urlPoster);<br />
+            parent.append(item);<br />
+        </code>
+        <b>Source Code || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/jqueryui-and-ajax/001.html">HTML Code</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/jqueryui-and-ajax/001.js">JS Code</a> </b>
+    </div>
+</body>
+</html>

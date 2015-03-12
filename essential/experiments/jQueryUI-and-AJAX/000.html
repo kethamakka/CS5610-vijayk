@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery-Basics</title>
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="000.js"></script>
+    <link rel="stylesheet" href="../../page-width.css" type="text/css" />
+
+</head>
+<body>
+    <h1 class="hello">Ajax</h1>
+    Search for a movie. 
+    <br />
+    <input id="title" placeholder="Title" />
+    <button id="getMovie">Get Movie</button>
+    <ul id="movies">
+        
+    </ul>
+    <div id="documentation">
+        <h3>
+            About the Experiment
+        </h3>
+        <code>
+            $.ajax({<br />
+            url: "http://www.myapifilms.com/imdb?title="+title+"&format=JSONP&aka=0&business=0&seasons=0&seasonYear=0&technical=0&filter=N&exactFilter=0&limit=5&lang=en-us&actors=N&biography=0&trailer=0&uniqueName=0&filmography=0&bornDied=0&starSign=0&actorActress=0&actorTrivia=0&movieTrivia=0&awards=0&moviePhotos=N&movieVideos=N",<br />
+            dataType: "jsonp",<br />
+            success: renderMovies<br />
+            });
+        </code>
+        <p>The experiment demonstrates the way in which the content is retrieved from a web API and parse the obtained JSON object on a Cross Server scenario. JSONP object can be used to bypass the restrictions on JSON objects. The code snippet above shows the process in which the JSONP object is retrieved. The browser should be informed that the data type being used is a JSONP object type. The object received from the server are then parsed by grabbing hold of each element in the HTML page. It operates on the invarient that the developer should be aware of the structure of HTML document being displayed. This way is very dependent on the java script and is very restricting in terms of HTML structure. The below code shows the parsing of the obtained object.</p>
+        <code>
+            $("&lt;p&gt;")<br />
+            .append(plot)<br />
+            .appendTo(li);
+        </code>
+        <b>Source Code || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/jqueryui-and-ajax/000.html">HTML Code</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/jqueryui-and-ajax/000.js">JS Code</a> </b>
+    </div>
+</body>
+</html>
