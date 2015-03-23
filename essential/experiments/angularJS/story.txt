@@ -1,0 +1,6 @@
+week-8.html				Week-8 Experiments
+000-basics.html			Basics of Angular
+001-my-movie.html		Movie Library
+002-$http.html			$http Movie Library
+003-favorites.html		Add to favorites
+004-step-further.html	Details of favorite movie

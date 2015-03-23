@@ -1,6 +1,6 @@
 ﻿$(function () {
     $("#addPara").click(function () {
-        addPara("New Paragraph", 250, 150);
+        addPara("New Paragraph", 250, 450);
     });
     $("#save").click(save);
     $("#load").click(load);

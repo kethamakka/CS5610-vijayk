@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular Routing</title>
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../../bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <script src="../../js/angular.min.js"></script>
+    <script src="../../js/angular-route.js"></script>
+    <script src="000.js"></script>
+</head>
+<body ng-app="routingApp">
+
+    <div  class="container">
+        <nav>
+            <a href="#/home">Home |</a>
+            <a href="#/about">About |</a>
+            <a href="#/contact">contact |</a>
+        </nav>
+        <div ng-view>
+
+        </div>
+    </div>
+</body>
+</html>
+

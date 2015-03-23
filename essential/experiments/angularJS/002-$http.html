@@ -1,20 +1,27 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Local Movie Library</title>
+    <title>Virtual Movies Library</title>
     <script src="js/angular.min.js"></script>
-    <script src="001-my-movies.js"></script>
+    <script src="002-$http.js"></script>
     <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    
+    <link href="002.css" rel="stylesheet" type="text/css" />
 </head>
-<body ng-app="MyMovies" >
+<body ng-app="MyMovies">
     <div ng-controller="MovieController" class="container">
         <h1>My Movies Library</h1>
+
+        <div class="input-group">
+            <input type="text" class="form-control" ng-model="searchByTitle" placeholder="Search for...">
+            <span class="input-group-btn">
+                <button ng-click="searchMovies(movie)" class="btn btn-default" type="button">Go!</button>
+            </span>
+        </div><!-- /input-group -->
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Title</th>
-                    <th>Director</th>
+                    <th>Directors</th>
                     <th>Year</th>
                     <th>Plot</th>
                     <th>&nbsp;</th>
@@ -23,7 +30,7 @@
             <tbody>
                 <tr>
                     <td><input ng-model="movie.title" class="form-control" /></td>
-                    <td><input ng-model="movie.director" class="form-control" /></td>
+                    <td><input ng-model="movie.directors" class="form-control" /></td>
                     <td><input ng-model="movie.year" class="form-control" /></td>
                     <td><input ng-model="movie.plot" class="form-control" /></td>
                     <td>
@@ -39,9 +46,11 @@
                 </tr>
                 <tr ng-repeat="movie in movies">
                     <td>{{movie.title}}</td>
-                    <td>{{movie.director}}</td>
+                    <td><span ng-repeat="d in movie.directors track by $index">{{d.name}}<br /></span></td>
                     <td>{{movie.year}}</td>
-                    <td>{{movie.plot}}</td>
+                    <td>
+                        <img class="poster" ng-src="{{movie.urlPoster}}" width="120" />
+                    {{movie.plot}}</td>
                     <td>
                         <button ng-click="deleteMovie(movie)" class="btn btn-danger">
                             <span class="glyphicon glyphicon-remove"></span>
@@ -59,21 +68,19 @@
         <div class="panel-heading">About the Experiment</div>
         <div class="panel-body">
             <p>
-                This experiment reads an array of JSONs from the script and reners them in the HTML response page. As soon as the movies are dispayes on the page, They are "editable" and "removable" and a new movie could be added to the "view".
+                This experiment brings a new magic variable <span><code>$http</code></span>. This helps angularJS to make http request from a server and lets the developer to render the details obtained. The controller holds the AJAX requests and handlers render the details.
             </p>
             <code>
-                $scope.addMovie = function (movie) {<br />
-                    var newMovie = { <br />
-                    title: $scope.movie.title, <br />
-                    director: $scope.movie.director, <br />
-                    year: $scope.movie.year, <br />
-                    plot: $scope.movie.plot <br />
-                    };<br />
-                $scope.movies.push(newMovie);<br />
-                }
+                $scope.searchMovies = function () {<br />
+                var title = $scope.searchByTitle;<br /> 
+                $http.jsonp("http://www.myapifilms.com/imdb?title= .... <br />
+                .success(function (response) {<br />
+                console.log(response);<br />
+                $scope.movies = response;<br />
+                });
             </code>
-            <p>The code explains how a new movie is being added to the view.</p>
-            <p>Source Code || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/angularjs/001-my-movie.html">HTML Source</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/angularjs/001-my-movies.js">JS Source</a></p>
+            <p>The code shows how the http request is dealt with The seccess function captures the "response" and the response is bound to a angulal literal in the UI.</p>
+            <p>Source Code || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/angularjs/002-$http.html">HTML Source</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/angularjs/002-$http.js">JS Source</a></p>
         </div>
 
     </div>

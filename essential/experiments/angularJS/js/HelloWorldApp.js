@@ -10,6 +10,6 @@ app.controller("HelloController",
                          { first: "Kachak", last: "Durbhaka" },
                          { first: "Kichick", last: "Kethamakka" }];
         $scope.employees = employees;
-        $scope.hello = "Dubai Sheik meeku dannam pedtundayyan!";
+        $scope.hello = "Hello from AngularJS";
         console.log("Hello from controller");
 });

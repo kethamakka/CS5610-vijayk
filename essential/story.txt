@@ -7,3 +7,4 @@ story/index.htm?../experiments/Responsive-Design-and-Misc/story.txt	Week 3 Exper
 story/index.htm?../experiments/Bootstrap-and-Misc/story.txt			Week 4 Experiments
 story/index.htm?../experiments/javascript-and-jQuery/story.txt		Week 5 and Week 6 Experiments
 story/index.htm?../experiments/jQueryUI-and-AJAX/story.txt			Week 7 Experiments
+story/index.htm?../experiments/angularJS/story.txt					Week 8 Experiments

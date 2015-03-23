@@ -4,7 +4,9 @@
     <title>Hello world Angular JS</title>
     <script src="js/angular.min.js"></script>
     <script src="js/HelloWorldApp.js"></script>
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="../../page-width.css" rel="stylesheet" type="text/css" />
+    <link href=
 </head>
 <body ng-app="HelloWorldApp">
     <div ng-controller="HelloController">
@@ -29,6 +31,28 @@
         <input ng-model="hello" />
         <br />
         {{hello}}
+
+        <br />
+        <br />
+        <br />
+
+
+        <div class="panel panel-primary">
+        <div class="panel-heading">About the Experiment</div>
+        <div class="panel-body">
+            <p>
+                The experiment begins the idea of working with AngularJS. The experiment introduces the two-way binding channels of AngularJS. The directive <span><code>ng-app</code></span> initiates the app as a angular application. The <span><code>angular.module</code></span> in the script instantiates the angular app. The literals that look like {{<span><code>hello</code></span>}} are the two way binders. Whatever happens to them in the UI is reflected in script and viceversa. These are bound by <span><code>ng-model</code></span> directive.
+            </p>
+            <h4><b>Code Snippets</b></h4>
+            <code>
+                var employee = { first: "Saradhi", last: "Kethamakka" };<br />
+                $scope.employee = employee;
+            </code>
+            <p>The above code says that The JSON "employee" has "first" and "last" attributes. These attributes are bound to {{<span><code>employee.first</code></span>}} and {{<span><code>employee.last</code></span>}}</p>
+            <p>Source Code || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/angularjs/000-basics.html">HTML Source</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/angularjs/js/HelloWorldApp.js">JS Source</a></p>
+        </div>
+
+    </div>
     </div>
     
 </body>
