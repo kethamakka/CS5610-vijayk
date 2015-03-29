@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Add a tile</title>
+    <script src="../angularJS/js/angular.min.js"></script>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="time.js"></script>
+    <script src="add-tile.js"></script>
+    <script src="../../bootstrap/js/bootstrap.js"></script>
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="time.css" rel="stylesheet" type="text/css" />
+    <link href="tile.css" rel="stylesheet" type="text/css" />
+    <link href="nav-bar.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+   
+    
+</head>
+
+<body ng-app="myTime" >
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="addBtn">
+            <div id="text">Add a tile here</div>
+            <button id="addTile" class="btn btn-default">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+        </div>
+    </nav>
+    <div   class="container">
+        <div ng-controller="timeController" class="clock">
+            <h3>{{clock | date:'mediumDate'}}</h3>   
+            <h3 ng-model="am" ng-init="am = 0" ng-hide="am" ng-dblclick="changeType()"><b>{{clock | date:'shortTime'}}</b></h3> 
+            <h3 ng-show="am" ng-dblclick="changeTf()"><b>{{clock | date:'HH:mm'}}</b></h3> 
+        </div>
+        <div id ="documentation">
+        <h3>About the experiment</h3>
+        <p>The experiment is one of the key aspects of the project. The "plus" glyphicon in the "navigation bar" will allow users to add a tile to the dashboard. The tile is added at an absolute position but the tile is draggable thus making the dashboard customizable.</p>
+        <h3>Code snippet</h3>
+        <code>
+            $(".container").append(tile);<br />
+            tile<br />
+            &nbsp;&nbsp;.draggable()<br />
+            &nbsp;&nbsp;.resizable()<br />
+            &nbsp;&nbsp;.css({<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"position": "absolute",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"left" : x,<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"top" : y})<br />
+        </code>
+        <p>Source Code || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/project-beginnings/Add-a-tile.html">HTML Source</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/project-beginnings/add-tile.js">JS Source</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/project-beginnings/nav-bar.css">css Source</a></p>
+    </div>
+    </div>
+    
+</body>
+</html>

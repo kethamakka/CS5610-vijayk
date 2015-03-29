@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Time</title>
+    <script src="../angularJS/js/angular.min.js"></script>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="time.js"></script>
+    <script src="../../bootstrap/js/bootstrap.js"></script>
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="time.css" rel="stylesheet" type="text/css" />
+    <link href="tile.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+    
+</head>
+
+<body ng-app="myTime" >
+    <div   class="container">
+        <div ng-controller="timeController" class="clock">
+            <h3>{{clock | date:'mediumDate'}}</h3>   
+            <h3 ng-model="am" ng-init="am = 0" ng-hide="am" ng-dblclick="changeType()"><b>{{clock | date:'shortTime'}}</b></h3> 
+            <h3 ng-show="am" ng-dblclick="changeTf()"><b>{{clock | date:'HH:mm'}}</b></h3> 
+        </div>
+        <div class="tile">
+        <div class="header">
+            <div class="title">
+                <span>Pick a category here</span>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div id ="documentation">
+        <h3>About the experiment</h3>
+        <p>This experiment is about creating a tile. A tile is handler which holds the content being added to the tile. The widget that is being added will be given by the Dropdown menu on the tile header. The selected category will be applied to the tile. The tile is draggable. The user can customize the space available to him on the dashboard.</p>
+        <code>
+            width : 250px;<br />
+            height : 200px;<br />
+            background-color:beige;<br />
+            border-radius: 3px 3px;<br />
+        </code>
+        <p>Source Code || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/project-beginnings/tile.html">HTML Source</a> || <a href="http://net4.ccs.neu.edu/home/vijayk/fileview/Default.aspx?~/experiments/project-beginnings/tile.css">CSS Source</a></p>
+    </div>
+    </div>
+</body>
+</html>
+

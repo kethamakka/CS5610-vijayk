@@ -1,0 +1,40 @@
+﻿.tile {
+    width : 250px;
+    height : 200px;
+    background-color:beige;
+    border-radius: 3px 3px;
+}
+
+.header {
+    height : 40px;
+    background-color : rgb(34, 34, 34);
+    border-radius:3px;  
+    padding: 4px 4px 4px 4px;
+}
+
+.header .title{
+    font: 400 25px 'Great Vibes', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+    margin :0px 0px 0px 0px;
+    float:left;
+    display: inline-block;
+    padding-left:15px;
+    margin-top:4px;
+
+}
+
+.btn-group {
+    float: right;
+}
+
+.btn-group .btn{
+    margin-top:auto;
+    padding:4px;
+}
+
+//#head .btn-group {
+//} 
+
+  //  */
+  
