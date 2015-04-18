@@ -1,0 +1,16 @@
+﻿.navbar .btn {
+    min-width:80px;
+}
+
+.navbar a {
+    color:black;
+    font-size:15px;
+}
+
+.navbar a:hover {
+    color:orangered !important;
+}
+
+a, u {
+    text-decoration:none !important; 
+}

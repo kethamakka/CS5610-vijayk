@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Weather App</title>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../bootstrap/js/bootstrap.js"></script>
+    <script src="../../js/angular.min.js"></script>
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src ="weather.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body ng-app="weatherApp">
+    <div ng-controller="weatherController" class="container">
+        <div class="wctrl">
+            <input type="text"
+        </div>
+        <div>
+            <button class="btn btn-default" ng-click="getWeather()">Get Weather</button> 
+        </div>
+        <div id="display" ng-bind-html="results"></div>
+    </div>
+</body>
+</html>

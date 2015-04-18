@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Weather App</title>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../bootstrap/js/bootstrap.js"></script>
+    <script src="../../js/angular.min.js"></script>
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src ="geolocation.js"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>-->
+</head>
+
+<body ng-app="geoApp">
+    <div ng-controller="geoControl" class="container">
+      <div class="incoming">
+        <input type="text" class="form-control" id ="address"  placeholde="Enter a location here" />
+        <button class="btn btn-primary" ng-click="getLocation()">Geocode</button>   
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,396 @@
+﻿html {
+    background-color: rgb(101,101,101);
+}
+
+ul.master_navigation {
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+ul.master_navigation li {
+    display: inline-block;
+    padding: 0 0.5%;
+}
+
+ul.master_navigation a {
+    color: beige;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul.master_navigation a:hover {
+    color: gray;
+}
+a {
+    color : rgb(37,37,37);
+    font-weight:bold;
+    text-decoration:none;
+}
+
+a:visited {
+    color: lightgrey;
+}
+
+a:hover {
+    color: black;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 168px;
+    height: 288px;
+}
+
+.about-me {
+    overflow:hidden;
+}
+
+.about-me .col-1 {
+    font-family: 'Great Vibes', Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.small-about-me {
+    display:none;
+}
+
+.components {
+    overflow:hidden;
+    height: 200px;
+    max-height:100%;
+}
+
+ .pad {
+        padding: 10px;
+        margin:0px auto;
+        background-color : beige;
+    }
+
+    
+@media screen and (min-width:1000px){
+    body {
+        max-width: 100%;
+        margin:0px;
+        padding: 10px;
+    }
+       
+    .header {
+    background-color:rgb(17,17,17);
+    padding:5px;
+    margin-bottom:10px;
+    border-radius:3px;
+    }
+    .pad {
+        width: 1000px;
+    }
+
+    .about-me .col-1{
+        padding-left:20px;
+        padding-right:20px;
+        width:60%;
+        height:300px;
+        margin:0px;
+        float:left;
+    }
+    .about-me .col-2 {
+        padding:10px;
+        width:25%;
+        height:300px;
+        margin:0px;
+        float:right;
+    }
+
+    .components .experiments {
+        width : 33%;
+        height : 100%;
+        float:left;
+        border-radius:30px;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+    }
+
+    .components .project {
+        width :33%;
+        height:100%;
+        float:left;
+        border-radius:30px;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+    }
+
+    .components .documentation {
+        width :33%;
+        height:100%;
+        float:left;
+        border-radius:30px;
+        background-color:rgb(34, 34, 34);
+        
+    }
+    .footer {
+        height:100px;
+        background-color:rgb(17,17,17);
+        padding:5px;
+        margin-bottom:0px;
+        margin-top:10px;
+        border-radius:3px;
+    }
+
+
+
+}
+
+@media screen and (min-width:660px) and (max-width:999px){
+    body {
+        max-width: 100%;
+        margin:0px;
+        padding: 10px;
+    }
+       
+    .header {
+    background-color:rgb(17,17,17);
+    padding:5px;
+    margin-bottom:10px;
+    border-radius:3px;
+    }
+    .pad {
+        max-width: 100%;
+    }
+
+    .about-me .col-1{
+        padding-left:20px;
+        padding-right:20px;
+        width:60%;
+        height:300px;
+        margin:0px;
+        float:left;
+    }
+    .about-me .col-2 {
+        padding:10px;
+        width:30%;
+        height:300px;
+        margin:0px;
+        float:right;
+    }
+
+    .components .experiments {
+        width : 33%;
+        height : 100%;
+        float:left;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+        border-radius:95px;
+    }
+
+    .components .project {
+        width :33%;
+        height:100%;
+        float:left;
+        border-radius:95px;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+
+    }
+
+    .components .documentation {
+        width :33%;
+        height:100%;
+        float:left;
+        border-radius:95px;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+
+    }
+    .footer {
+        height:100px;
+        background-color:rgb(17,17,17);
+        padding:5px;
+        margin-bottom:0px;
+        margin-top:10px;
+        border-radius:3px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 659px){
+    body {
+        max-width: 100%;
+        margin:0px;
+        padding: 10px;
+    }
+       
+    .header {
+    background-color:rgb(17,17,17);
+    padding:5px;
+    margin-bottom:10px;
+    border-radius:3px;
+    }
+    .pad {
+        max-width: 100%;
+    }
+
+    .about-me .col-1{
+        padding-left:20px;
+        padding-right:20px;
+        width:60%;
+        height:370px;
+        margin:0px;
+        float:left;
+    }
+    .about-me .col-2 {
+        padding-top:90px;
+        text-align:center;
+        width:30%;
+        height:370px;
+        margin:0px;
+        float:right;
+    }
+
+    .components .experiments {
+        width : 33%;
+        height : 100%;
+        float:left;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+        border-radius:95px;
+    }
+
+    .components .project {
+        width :33%;
+        height:100%;
+        float:left;
+        border-radius:95px;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+
+    }
+
+    .components .documentation {
+        width :33%;
+        height:100%;
+        float:left;
+        border-radius:95px;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+
+    }
+    .footer {
+        height:100px;
+        background-color:rgb(17,17,17);
+        padding:5px;
+        margin-bottom:0px;
+        margin-top:10px;
+        border-radius:3px;
+    }
+    
+    img {
+        width:126px;
+        height:215px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .about-me {
+    display:none;
+    }
+
+    .small-about-me {
+        display:block;
+    }
+
+    body {
+        max-width: 100%;
+        margin:0px;
+        padding: 10px;
+    }
+       
+    .header {
+        height:auto;
+        background-color:rgb(17,17,17);
+        padding:8px;
+        margin-bottom:10px;
+        border-radius:3px;
+    }
+    .pad {
+        max-width: 100%;
+        height:100%;
+    }
+
+    .small-about-me .col-1{
+        padding-left:20px;
+        padding-right:20px;
+        max-width:100%;
+        margin:0px;
+        float:left;
+    }
+    .small-about-me .col-2 {
+        padding:10px;
+        text-align:center;
+        max-width:100%;
+        margin:0px;
+        float:none;
+    }
+    .components {
+        height:300px;
+    }
+
+    .components .experiments {
+        max-width : 100%;
+        height:33%;
+        border-radius:95px;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+
+    }
+
+    .components .project {
+        max-width :100%;
+        height:33%;
+        border-radius:95px;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+
+    }
+
+    .components .documentation {
+        max-width :100%;
+        height:34%;
+        border-radius:95px;
+        background-color:rgb(34, 34, 34);
+        margin-right:5px;
+
+    }
+    .footer {
+        height:80px;
+        background-color:rgb(17,17,17);
+        padding:5px;
+        margin-bottom:0px;
+        margin-top:10px;
+        border-radius:3px;
+    }
+    
+    img {
+        width:126px;
+        height:215px;
+    }
+    ul.master_navigation {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        list-style: none;
+        margin: 0.5em 0;
+        padding: 0px;
+    }
+
+    ul.master_navigation li {
+        display: inline-block;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,23 @@
+﻿.container {
+    //width:700px;
+    display : flex;
+    flex-wrap:wrap;
+}
+
+.blue{
+    //height : 100px;
+    background-color:blue;
+    width:100%;
+}
+
+.lblue{
+    //height : 100px;
+    background-color:lightblue;
+    width:100%;
+}
+
+.green{
+    //height : 100px;
+    background-color:green;
+    width:100%;
+}
