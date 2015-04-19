@@ -60,12 +60,6 @@ img {
     display:none;
 }
 
-.components {
-    overflow:hidden;
-    height: 200px;
-    max-height:100%;
-}
-
  .pad {
         padding: 10px;
         margin:0px auto;
@@ -132,6 +126,13 @@ img {
         background-color:rgb(34, 34, 34);
         
     }
+
+    .components {
+    overflow:hidden;
+    height: 100px;
+    max-height:100%;
+}
+
     .footer {
         height:100px;
         background-color:rgb(17,17,17);
@@ -206,6 +207,13 @@ img {
         margin-right:5px;
 
     }
+
+    .components {
+    overflow:hidden;
+    height: 100px;
+    max-height:100%;
+}
+
     .footer {
         height:100px;
         background-color:rgb(17,17,17);
@@ -281,6 +289,12 @@ img {
         margin-right:5px;
 
     }
+    .components {
+    overflow:hidden;
+    height: 100px;
+    max-height:100%;
+}
+
     .footer {
         height:100px;
         background-color:rgb(17,17,17);
@@ -349,6 +363,12 @@ img {
         margin-right:5px;
 
     }
+    .components {
+    overflow:scroll;
+    height: 60px;
+    max-height:100%;
+}
+
 
     .components .project {
         max-width :100%;
