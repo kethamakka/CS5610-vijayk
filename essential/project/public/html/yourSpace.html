@@ -14,6 +14,7 @@
     <script src="../js/favorites.js"></script>
     <script src="../js/logout.js"></script>
     <script src="../js/findPpl.js"></script>
+    <script src="../js/profiletrig.js"></script>
     <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css" />
     <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="../css/time.css" rel="stylesheet" type="text/css" />
@@ -33,14 +34,15 @@
             <button class="btn btn-default" id="logout" title="Log Out">
                 <span class="glyphicon  glyphicon-log-out"></span>
             </button>
-            <button class="btn btn-default disabled" title ="Profile">
-                <span class="glyphicon glyphicon-user"></span>
+            <button class="btn btn-default profilepage" title="Profile">
+                <span class="glyphicon glyphicon-user "></span>
             </button>
-            <button class="btn btn-default disabled" id="findPpl" title="Find People">
-                <span class="glyphicon glyphicon-user" ></span><span class="glyphicon glyphicon-user profile"></span>
-            </button>
+            <!--<img title="Profile" class="profilepage" src="../images/icons/profile.PNG" height="41" width="50"/>-->
             <button class="btn btn-default" id="favorites" title="Favorites">
-                <span class="glyphicon glyphicon-star "></span>
+                <span class="glyphicon glyphicon-star"></span>
+            </button>
+            <button class="btn btn-default" id="findPpl" title="Find Friends">
+                <span><img src="../images/icons/group.jpg" height="33" width="43"/></span>
             </button>
         </div>
 
@@ -53,9 +55,9 @@
     </nav>
     <div   class="container">
         <div ng-controller="timeController" class="clock">
-            <h3>{{clock | date:'mediumDate'}}</h3>   
-            <h3 ng-model="am" ng-init="am = 0" ng-hide="am" ng-dblclick="changeType()"title="Double click on this"><b>{{clock | date:'shortTime'}}</b></h3> 
-            <h3 ng-show="am" ng-dblclick="changeTf()"title="Double click on this"><b>{{clock | date:'HH:mm'}}</b></h3> 
+            <h3 style="color:#fff;">{{clock | date:'mediumDate'}}</h3>   
+            <h3 ng-model="am" ng-init="am = 0" ng-hide="am" ng-dblclick="changeType()"title="Double click on this" style="color:#fff;"><b>{{clock | date:'shortTime'}}</b></h3> 
+            <h3 ng-show="am" ng-dblclick="changeTf()"title="Double click on this" style="color:#fff;"><b>{{clock | date:'HH:mm'}}</b></h3> 
         </div>
         <div class="template" id="dummy">
             <div class="header">
@@ -193,7 +195,7 @@
             <br />
             <button class="btn btn-danger" id="warning">OK</button>
         </div>
-
+        <!-- Socia Temps -->
         <div class="socTile notify" style="display:none;">
             <div class="socHeader">
                 <div class="socTitle">
@@ -209,6 +211,20 @@
             <div  class="empty" ></div>
         </div>
         
+        <div class="socTile friends" style="display:none;">
+            <div class="socHeader">
+                <div class="socTitle">
+                    <span>Friends</span>
+                </div>
+                <button style="padding:3px; margin-top:2px;" class="btn btn-danger pull-right" id="fdel"><span class="glyphicon glyphicon-remove"></span></button>
+            </div>
+            <div class="fcont-contain">
+                <div class="fcontent">
+                    <ul class="list-group frender" style="margin:5px;list-style:none"></ul>
+                </div>
+            </div>
+            <div  class="empty" ></div>
+        </div>
         <!--Youtube Template -->
 
         <div class="ytTemplate" style="display:none">

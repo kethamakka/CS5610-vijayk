@@ -1,4 +1,8 @@
-﻿.panel-default > .panel-heading{
+﻿body {
+    
+}
+
+.panel-default > .panel-heading{
     background-color : rgb(34, 34, 34);
 }
 
@@ -28,4 +32,11 @@
 
 a, u {
     text-decoration:none !important; 
+}
+
+.errDiv {
+    padding-left:380px;
+    color:orangered;
+    font-size:medium;
+    font-weight:600;
 }

@@ -1,11 +1,20 @@
 ﻿var i = $(".tile").length;
 //console.log(localStorage.getItem("dashboard"));
+var username = localStorage.getItem("dashboard");
+var firstname = localStorage.getItem("firstname");
+var lastname = localStorage.getItem("lastname");
 
 $(function () {
     $("#addTile").click(function () {
-        addTile(250, 150);
+       addTile(250, 150);
     });
 });
+
+
+
+
+
+
 
 function addTile(x, y) {
     var i = $(".tile").length;
@@ -102,22 +111,25 @@ function addTile(x, y) {
             });
         });
         var wFave = $(tile).find("#wFav")[0];
-        //console.log(wFave);
         $(wFave).click(function () {
-            var type = $(content).children("div").attr("class");
-            var query = $(plHold).val();
-            var username = localStorage.getItem("dashboard");
-            var favObj = { username: username, tileType: type, story: query };
-            $.ajax({
-                type: "PUT",
-                dataType: "json",
-                url: "/api/favorite",
-                data: favObj,
-                success: function (data) {
-                    console.log(data);
-                }
-                
-            });
+            if (username == null) {
+                alert("Sorry! You must be logged in for this feature");
+                location.href = "login.html";
+            }
+            else {
+                var type = $(content).children("div").attr("class");
+                var query = $(plHold).val();
+                var favObj = { username: username, tileType: type, story: query };
+                $.ajax({
+                    type: "POST",
+                    url: "/api/setfav/" + username + "/" + type + "/" + query,
+                    //data: favObj,
+                    success: function (data) {
+                        console.log(data);
+                    },
+                    dataType: "json"
+                });
+            }
         });
     });
         
@@ -173,19 +185,25 @@ function addTile(x, y) {
 
         var dictFav = $(tile).find("#dictFav")[0];
         $(dictFav).click(function () {
-            var type = $(content).children("div").attr("class");
-            var query = $(field).val();
-            var username = localStorage.getItem("dashboard");
-            var favObj = { username: username, tileType: type, story: query };
-            $.ajax({
-                type: "PUT",
-                url: "/api/favorite",
-                data: favObj,
-                success: function (data) {
-                    console.log(data);
-                },
-                dataType: "json"
-            });
+            if (username == null) {
+                alert("Sorry! You must be logged in for this feature");
+                location.href = "login.html";
+            }
+            else {
+                var type = $(content).children("div").attr("class");
+                var query = $(field).val();
+
+                var favObj = { username: username, tileType: type, story: query };
+                $.ajax({
+                    type: "POST",
+                    url: "/api/setfav/" + username + "/" + type + "/" + query,
+                    //data: favObj,
+                    success: function (data) {
+                        console.log(data);
+                    },
+                    dataType: "json"
+                });
+            }
         });
 
     });
@@ -224,19 +242,24 @@ function addTile(x, y) {
 
         var loFav = $(tile).find("#loFav")[0];
         $(loFav).click(function () {
-            var type = $(content).children("div").attr("class");
-            var query = $(loTxt).val();
-            var username = localStorage.getItem("dashboard");
-            var favObj = { username: username, tileType: type, story: query };
-            $.ajax({
-                type: "PUT",
-                url: "/api/favorite",
-                data: favObj,
-                success: function (data) {
-                    console.log(data);
-                },
-                dataType: "json"
-            });
+            if (username == null) {
+                alert("Sorry! You must be logged in for this feature");
+                location.href = "login.html";
+            }
+            else {
+                var type = $(content).children("div").attr("class");
+                var query = $(loTxt).val();
+                var favObj = { username: username, tileType: type, story: query };
+                $.ajax({
+                    type: "POST",
+                    url: "/api/setfav/" + username + "/" + type + "/" + query,
+                    //data: favObj,
+                    success: function (data) {
+                        console.log(data);
+                    },
+                    dataType: "json"
+                });
+            }
         });
 
     });
@@ -311,19 +334,33 @@ function addTile(x, y) {
 
         var youFav = $(tile).find("#youFav")[0];
         $(youFav).click(function () {
-            var type = $(content).children("div").attr("class");
-            var query = $(yText).val();
-            var username = localStorage.getItem("dashboard");
-            var favObj = { username: username, tileType: type, story: query };
-            $.ajax({
-                type: "PUT",
-                url: "/api/favorite",
-                data: favObj,
+            if (username == null) {
+                alert("Sorry! You must be logged in for this feature");
+                location.href = "login.html";
+            }
+            else {
+                var type = $(content).children("div").attr("class");
+                var query = $(yText).val();
+                var favObj = { username: username, tileType: type, story: query };
+                $.ajax({
+                    type: "POST",
+                    url: "/api/setfav/" + username + "/" + type + "/" + query,
+                    //data: favObj,
+                    success: function (data) {
+                        console.log(data);
+                    },
+                    dataType: "json"
+                });
+            }
+            /*$.ajax({
+                type: "POST",
+                url: "/api/favorite/" + username + "/" + type + "/" + query,
+                //data: favObj,
                 success: function (data) {
                     console.log(data);
                 },
                 dataType: "json"
-            });
+            });*/
         });
     });
 

@@ -1,10 +1,11 @@
 ﻿.socTile {
     width:300px;
-    height : auto;
+    height : 300px;
     background-color:beige;
     border-radius: 5px 5px;
     border:thin solid;
     border-color:rgb(34, 34, 34);
+    overflow:scroll;
 }
 
 .socHeader {

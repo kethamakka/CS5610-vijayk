@@ -35,12 +35,12 @@ app.controller("regController", function ($scope, $http) {
             $("#errMsg").empty().append(errorMsg);
             return;
         }
-        /*else if (!validatePass(password)) {
+        else if (!validatePass(password)) {
             errorMsg = "ERROR: password must have atleast one Uppercase letter, one lowercase letter, one special character, one numerical digit, atleast 8 characters and 12 characters at most.";
             console.log(errorMsg);
             $("#errMsg").empty().append(errorMsg);
             return;
-        }*/
+        }
         else if (angular.isUndefined(cnfPwd) || cnfPwd == null) {
             errorMsg = "ERROR: Please re-type the password";
             console.log(errorMsg);
@@ -71,11 +71,9 @@ app.controller("regController", function ($scope, $http) {
                     username: userName,
                     password: password,
                     email: emailId,
-                    apps: null,
-                    favorites: null,
-                    following: null,
-                    followedby: null,
-                    notifications: null
+                    favorites: undefined,
+                    following: undefined,
+                    followedby: undefined
                 };
                 //console.log(userObj);
                 userStr = JSON.stringify(userObj);
@@ -97,10 +95,7 @@ app.controller("regController", function ($scope, $http) {
 
     };
 });
-        // $scope.reset = resetDoc();
-    
-
-           
+       
                
 function validatePass(password){
     var passwordFormat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,12}$/;

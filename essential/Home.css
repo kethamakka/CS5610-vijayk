@@ -101,7 +101,7 @@ img {
     }
 
     .components .experiments {
-        width : 33%;
+        width : 32%;
         height : 100%;
         float:left;
         border-radius:30px;
@@ -110,7 +110,7 @@ img {
     }
 
     .components .project {
-        width :33%;
+        width :32%;
         height:100%;
         float:left;
         border-radius:30px;
@@ -119,22 +119,26 @@ img {
     }
 
     .components .documentation {
-        width :33%;
+        width :31%;
         height:100%;
         float:left;
         border-radius:30px;
         background-color:rgb(34, 34, 34);
         
     }
+    .components .a {
+        color:#fff;
+        font-size:xx-large;
+        position: relative ;
+    }
 
     .components {
-    overflow:hidden;
-    height: 100px;
+    height: 50px;
     max-height:100%;
 }
 
     .footer {
-        height:100px;
+        height:40px;
         background-color:rgb(17,17,17);
         padding:5px;
         margin-bottom:0px;
@@ -180,7 +184,7 @@ img {
     }
 
     .components .experiments {
-        width : 33%;
+        width : 32%;
         height : 100%;
         float:left;
         background-color:rgb(34, 34, 34);
@@ -189,7 +193,7 @@ img {
     }
 
     .components .project {
-        width :33%;
+        width :32%;
         height:100%;
         float:left;
         border-radius:95px;
@@ -199,7 +203,7 @@ img {
     }
 
     .components .documentation {
-        width :33%;
+        width :31%;
         height:100%;
         float:left;
         border-radius:95px;
@@ -207,15 +211,19 @@ img {
         margin-right:5px;
 
     }
+    .components .a {
+        color:#fff;
+        font-size:x-large;
+        position: relative ;
+    }
 
     .components {
-    overflow:hidden;
-    height: 100px;
+    height: 50px;
     max-height:100%;
 }
 
     .footer {
-        height:100px;
+        height:40px;
         background-color:rgb(17,17,17);
         padding:5px;
         margin-bottom:0px;
@@ -262,7 +270,7 @@ img {
     }
 
     .components .experiments {
-        width : 33%;
+        width : 32%;
         height : 100%;
         float:left;
         background-color:rgb(34, 34, 34);
@@ -271,7 +279,7 @@ img {
     }
 
     .components .project {
-        width :33%;
+        width :32%;
         height:100%;
         float:left;
         border-radius:95px;
@@ -281,7 +289,7 @@ img {
     }
 
     .components .documentation {
-        width :33%;
+        width :31%;
         height:100%;
         float:left;
         border-radius:95px;
@@ -289,14 +297,20 @@ img {
         margin-right:5px;
 
     }
+
+    .components .a {
+        color:#fff;
+        font-size:large;
+        position: relative ;
+    }
     .components {
     overflow:hidden;
-    height: 100px;
+    height: 50px;
     max-height:100%;
 }
 
     .footer {
-        height:100px;
+        height:40px;
         background-color:rgb(17,17,17);
         padding:5px;
         margin-bottom:0px;
@@ -351,44 +365,47 @@ img {
         margin:0px;
         float:none;
     }
-    .components {
-        height:300px;
-    }
+    
 
     .components .experiments {
         max-width : 100%;
-        height:33%;
+        height:32%;
         border-radius:95px;
         background-color:rgb(34, 34, 34);
         margin-right:5px;
+        margin-bottom:5px;
 
     }
     .components {
-    overflow:scroll;
-    height: 60px;
+    height: 100px;
     max-height:100%;
 }
-
+    .components .a {
+        color:#fff;
+        font-size:medium;
+        position: relative ;
+    }
 
     .components .project {
         max-width :100%;
-        height:33%;
+        height:32%;
         border-radius:95px;
         background-color:rgb(34, 34, 34);
         margin-right:5px;
+        margin-bottom:5px;
 
     }
 
     .components .documentation {
         max-width :100%;
-        height:34%;
+        height:32%;
         border-radius:95px;
         background-color:rgb(34, 34, 34);
         margin-right:5px;
 
     }
     .footer {
-        height:80px;
+        height:40px;
         background-color:rgb(17,17,17);
         padding:5px;
         margin-bottom:0px;

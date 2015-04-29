@@ -34,7 +34,7 @@
                     <li><a href="blog/" target="_blank">Blog</a></li>
                     <li><a href="story/index.htm?../story.txt" target="_blank">Experiments</a></li>
                     <li><a href="https://github.com/kethamakka/CS5610-vijayk" target="_blank">GitHub</a></li>
-                    <li><a href="project/" target="_blank">Project</a></li>
+                    <li><a href="https://github.com/kethamakka/CS5610-vijayk/tree/master/essential/project" target="_blank">Project</a></li>
                 </ul>
             </div>
             
@@ -61,17 +61,18 @@
             <hr />
             <div class="components">
                 <div class="experiments" style="text-align:center;">
-                    <span><a href="http://localhost:52569/story/index.htm?../story.txt" style ="color:#fff; font-size:large;margin-top:30px;">Experiments</a></span>
+                    <span><a class="a" href="http://localhost:52569/story/index.htm?../story.txt"><b class="a">Experiments</b></a></span>
                 </div>
                 <div class="project" style="text-align:center; ">
-                    <span><a href="https://www.youtube.com/watch?v=4pgiqEA9gTA" style ="color:#fff; font-size:large;margin-top:30px;">Project</a></span>
+                    <span><a class="a" href="https://www.youtube.com/watch?v=4pgiqEA9gTA"><b class="a">Project</b></a></span>
                 </div>
                 <div class="documentation" style="text-align:center; ">
-                    <span><a href="#" style ="color:#fff; font-size:large;margin-top:30px;">Documentation</a></span>
+                    <span><a href="story/index.htm?../Documentation/story.txt"><b class="a">Documentation</b></a></span>
                 </div>
+                <div style="clear:both"></div>
             </div>
-            <div class="footer">
-                <span>footer</span>
+            <div class="footer" style="text-align:center; clear:both">
+                
             </div>
 
 

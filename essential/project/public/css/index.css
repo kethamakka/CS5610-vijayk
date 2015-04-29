@@ -1,4 +1,12 @@
-﻿.navbar .btn {
+﻿body {
+    background:url("../images/banners/homepage.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+
+.navbar .btn {
     min-width:80px;
 }
 

@@ -31,25 +31,23 @@ var userSchema = mongoose.Schema({
     email: String,
     favorites: [{ tileType: String, story: String }],
     following: [String],
-    followedby: [String],
-    notifications: [{from: String, story: String }]
+    followedby: [String]
     }, { collection: "user" });
 
 var User = mongoose.model("User", userSchema);
 
-/*var saradhi = new User({
-    firstname: 'Saradhi',
-    lastname: 'Kethamakka',
-    username: 'saradhiknv',
-    password: 'Saradhi.91',
-    email: 'saradhi.91@gmail.com',
-    favorites: [{tileType: "weather", story: "narasaraopet"}],
-    following: ["archana"],
-    followedby: ["archana"],
-    notifications: null
+/*var archu = new User({
+    firstname: 'Archana',
+    lastname: 'Durbhaka',
+    username: 'archana',
+    password: 'Archana.90',
+    email: 'dvsarchana@gmail.com',
+    favorites: undefined,
+    following: undefined,
+    followedby: undefined
 });
 
-saradhi.save();*/
+archu.save();*/
 
 app.post('/api/register', function (req, res) {
     var postObj = req.body;
@@ -85,22 +83,92 @@ app.get('/api/favorite/:username', function (req, res) {
     });
 });
 
+app.get('/api/checkuser/:other/:user', function (req, res) {
+    var uname = req.params.user;
+    var otherUser = req.params.other;
+    //console.log(uname);
+    //console.log(otherUser);
+    User.findOne({ username: uname }, 'following', function (err, data) {
+        //console.log(data);
+        var followList = data.following;
+        //console.log(followList);
+        for (var i = 0; i < followList.length; i++) {
+            if (followList[i] == otherUser) {
+                //console.log("match found : "+followList[i]);
+                res.json({ msg: "yes" });
+            }
+            else {
+                //console.log("no match found");
+                res.json({ msg: "no" });
+            }
+        }
+    });
+});
 
-app.put('/api/favorite', function (req, res) {
-    var data = req.body;
-    var kind = data.tileType;
-    console.log(kind);
-    var value = data.story;
-    var username = data.username;
-    //var result = null;
-    User.findOne({ username: username }, function (err, res) {
+
+app.post('/api/setfav/:username/:tile/:story', function (req, res) {
+    var username = req.params.username;
+    var kind = req.params.tile;
+    var value = req.params.story;
         User.update({ username: username },
             { $push: { favorites: { $each: [{ tileType: kind, story: value }] } } }, function (err, doc) {
                 if (err) throw err;
                 console.log(doc);
             });
+});
+
+app.post('/api/followsrvc/:other/:user', function (req, res) {
+    var username = req.params.user;
+    var otherUser = req.params.other;
+    //console.log("username : " + username);
+    //console.log("other fellow : " + otherUser);
+    User.update({ username: username },
+       { $push: { following: [otherUser] } }, function (err, doc) {
+            if (err) throw err;
+            console.log(doc);
+       });
+    User.update({ username: otherUser },
+        { $push: { followedby: [username] } }, function (err, doc) {
+            if (err) throw err;
+            console.log(doc);
+        });
+});
+
+app.get('/api/following/:user', function (req, res) {
+    var username = req.params.user;
+    User.findOne({ username: username }, 'following', function (err, data) {
+        //console.log(data);
+        res.json(data);
     });
 });
+
+app.get('/api/followedby/:user', function (req, res) {
+    var username = req.params.user;
+    User.findOne({ username: username }, 'followedby', function (err, data) {
+        //console.log(data);
+        res.json(data);
+    });
+});
+
+
+
+/*app.post('/api/favorite/:username/:tile/:story', function (req, res) {
+    var username = req.params.username;
+    var kind = req.params.tile;
+    var value = req.params.story;
+    //var value = data.story;
+    //var username = data.username;
+    console.log(username + kind + value);
+    res.json({ username: username, kind: kind, value: value });
+    //var result = null;
+    /*User.findOne({ username: username }, function (err, res) {
+        User.update({ username: username },
+            { $push: { favorites: { $each: [{ tileType: kind, story: value }] } } }, function (err, doc) {
+                if (err) throw err;
+                console.log(doc);
+            });
+    })
+});*/
 
 passport.use(new LocalStrategy(
 function (username, password, done) {
@@ -126,10 +194,26 @@ var auth = function (req, res, next) {
         next();
 };
 
-app.get('/api/findppl', function (req, res) {
+app.get('/api/findppl/:user', function (req, res) {
+    var currUser = { username: req.params.user};
+    //console.log(currUser);
     User.find({}, { username: 1, _id: 0 }, function (err, data) {
-        //console.log(data);
-        res.json(data);
+        //console.log(currUser);
+        if (data == null) {
+            res.json({ message: "No such user exists" })
+        }
+        else {
+            //console.log(data);
+            var otherUsers = [];
+            for (var i = 0; i < data.length; i++) { 
+                if (JSON.stringify(data[i]) != JSON.stringify(currUser)) {
+                    //console.log("spliced : " +data[i]);
+                    otherUsers.push(data[i]);
+                }
+            }
+            //console.log(otherUsers);
+            res.json(otherUsers);
+        }
     });
 });
 
