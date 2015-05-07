@@ -7,6 +7,7 @@ login.html					Login Page
 yourspace.html				Your Space Page
 widgets.html				Widgets explained
 favs.html					Favorites
+socialnw.html				Social Networking
 alevelup.html				Thinking at a bigger level
 thanks.html					A Thank You Note
 

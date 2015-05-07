@@ -64,7 +64,7 @@
                     <span><a class="a" href="http://localhost:52569/story/index.htm?../story.txt"><b class="a">Experiments</b></a></span>
                 </div>
                 <div class="project" style="text-align:center; ">
-                    <span><a class="a" href="https://www.youtube.com/watch?v=4pgiqEA9gTA"><b class="a">Project</b></a></span>
+                    <span><a class="a" href="Project.html"><b class="a">Project</b></a></span>
                 </div>
                 <div class="documentation" style="text-align:center; ">
                     <span><a href="story/index.htm?../Documentation/story.txt"><b class="a">Documentation</b></a></span>
@@ -72,8 +72,10 @@
                 <div style="clear:both"></div>
             </div>
             <div class="footer" style="text-align:center; clear:both">
-                
-            </div>
+                <div style="align-content:center;">
+                    <p class="copyright">&copy Naga Vijaya Saradhi Kethamakka</p>
+                </div>
+             </div>
 
 
 

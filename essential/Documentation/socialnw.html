@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Social Networking</title>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Social Networking</h2>
+        <p>The website also demonstrates the basics of social networking. The logged in user has a profile page. This page contains of the personal details of the user, the bookmarks made by the user, the people that the logged in user is following (within the community of my website) and the people who are following the logged in user. The user can visit the peers' profile right from their active links rendered in user's personal profile page. The YourSpace utility in itself will have a "Fried Finder". This gives out all the people who are registered to YourSpace. The user can navigate to the desired profile page and follow that profile. The "followers" and "followedBy" lists will be updeted at each transaction and rendered in personal and public profile pages.</p>
+        <hr />
+        <img class="img-responsive" src="../images/img/personalpro.PNG" alt="Friend Finder" style="height: 50%; width: 50%;" />
+        <p>The personal profile page shows the details and all the public information about the logged in user. In the screen shot, the user "dummy1" is following a user callse "saradhiknv". The followed by list is empty.</p>
+        <hr />
+        <img class="img-responsive" src="../images/img/frfi.PNG" alt="Friend Finder" style="height: 50%; width: 50%;" />
+        <p>When the user clicks the friend finder in YourSpace page, This tile appears showing the people available in the community.</p>
+        <hr />
+        <img class="img-responsive" src="../images/img/notfollowing.PNG" alt="Friend Finder" style="height: 50%; width: 50%;" />
+        <p>When the user selects a user who is not being followed by the current user, the page will be rendered giving an option to follow the user.</p>
+        <hr />
+        <img class="img-responsive" src="../images/img/following.PNG" alt="Friend Finder" style="height: 50%; width: 50%;" />
+        <p>When the user selects a user that he/she is following, the pages shows that this user is being followed. And the "followed By" list of the public profile shows the current logged in user thus establishing the relationship between the users.</p>
+        <hr />
+        <p>This is how the social networking part of the project was done. While rendering the profile pages, the query parameters are used. Usernames of curent logged in user and selected user are made as search parameters in URL to the profile page, as required. The searh parameters are then parsed using "location" object, thus making the pages stateful.</p>
+    </div>
+</body>
+</html>

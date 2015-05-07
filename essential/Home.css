@@ -145,6 +145,11 @@ img {
         margin-top:10px;
         border-radius:3px;
     }
+    .copyright {
+        color:#fff;
+        padding-left:37%;
+    }
+    
 
 
 
@@ -229,6 +234,10 @@ img {
         margin-bottom:0px;
         margin-top:10px;
         border-radius:3px;
+    }
+    .copyright {
+        color:#fff;
+        padding-left:35%;
     }
 
 
@@ -321,6 +330,11 @@ img {
     img {
         width:126px;
         height:215px;
+    }
+
+    .copyright {
+        color:#fff;
+        padding-left:33%;
     }
 }
 
@@ -429,5 +443,9 @@ img {
     ul.master_navigation li {
         display: inline-block;
         padding: 5px;
+    }
+    .copyright {
+        color:#fff;
+        padding-left:25%;
     }
 }
